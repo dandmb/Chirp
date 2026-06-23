@@ -1,6 +1,6 @@
 # Chirp
 
-Chirp is a Kotlin Multiplatform (KMP) project for a chat application similar to WhatsApp, targeting Android and iOS.
+Chirp is a Kotlin Multiplatform (KMP) project for a chat application similar to WhatsApp, targeting Android, Desktop and iOS.
 
 **Status:** 🚧 In Progress
 
