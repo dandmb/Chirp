@@ -1,16 +1,44 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Chirp
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+Chirp is a Kotlin Multiplatform (KMP) project for a chat application similar to WhatsApp, targeting Android, Desktop and iOS.
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+**Status:** 🚧 In Progress
 
+## Tech Stack
+- **Architecture:** MVVM (Modular)
+- **Dependency Injection:** Koin
+- **UI:** Jetpack Compose (Compose Multiplatform)
+- **Networking:** Ktor
+- **Database:** SQLDelight (Planned/In Progress)
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Project Structure
+
+This project follows a modular architecture to promote separation of concerns and scalability.
+
+### Core Modules
+- **`:composeApp`**: The main entry point for the application. It contains platform-specific setups (Android, iOS, Desktop) and orchestrates navigation.
+- **`:core:domain`**: Base entities, business logic interfaces, and core domain models.
+- **`:core:data`**: Shared data sources, networking, and repository implementations.
+- **`:core:presentation`**: Common UI logic, base ViewModels, and state management.
+- **`:core:designsystem`**: The project's theme (ChirpTheme), colors, typography, and reusable UI components.
+
+### Feature Modules
+- **`:feature:auth`**: Authentication flow, including login and registration.
+- **`:feature:chat`**: Core chat functionality, message handling, and conversation management.
+
+### Platform Modules
+- **`iosApp`**: Xcode project for the iOS target, serving as a thin wrapper around the shared Compose logic.
+
+## Getting Started
+
+### Prerequisites
+- Android Studio / IntelliJ IDEA
+- Xcode (for iOS development)
+- Kotlin Multiplatform Mobile plugin
+
+### Running the Project
+1. **Android:** Select `composeApp` and run on an emulator or physical device.
+2. **iOS:** Open `iosApp/iosApp.xcodeproj` in Xcode or run from Android Studio if the KMP plugin is configured.
+3. **Desktop:** Run the `./gradlew :composeApp:run` command.
+
+---
