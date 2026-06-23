@@ -37,5 +37,9 @@ gradlePlugin {
             id = "org.dmb1227.convention.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidComposeApplication") {
+            id = "org.dmb1227.convention.android.application.compose"
+            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
     }
 }

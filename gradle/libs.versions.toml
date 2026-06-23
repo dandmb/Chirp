@@ -157,6 +157,7 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 
 [plugins]
 convention-android-application = { id = "org.dmb1227.convention.android.application", version = "unspecified" }
+convention-android-application-compose = { id = "org.dmb1227.convention.android.application.compose", version = "unspecified" }
 
 # Android
 android-application = { id = "com.android.application", version.ref = "agp" }
