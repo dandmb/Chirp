@@ -50,5 +50,13 @@ gradlePlugin {
             id = "org.dmb1227.convention.kmp.library"
             implementationClass = "KmpLibraryConventionPlugin"
         }
+        register("cmpLibrary") {
+            id = "org.dmb1227.convention.cmp.library"
+            implementationClass = "CmpLibraryConventionPlugin"
+        }
+        register("cmpFeature") {
+            id = "org.dmb1227.convention.cmp.feature"
+            implementationClass = "CmpFeatureConventionPlugin"
+        }
     }
 }
