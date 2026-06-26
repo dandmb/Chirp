@@ -1,4 +1,4 @@
-package org.dmb1227.core.designsystem.components
+package org.dmb1227.core.designsystem.components.buttons
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement

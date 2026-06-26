@@ -1,4 +1,4 @@
-package org.dmb1227.core.designsystem.components
+package org.dmb1227.core.designsystem.components.buttons
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
