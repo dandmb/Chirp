@@ -39,35 +39,35 @@ gradlePlugin {
     plugins {
         register("androidApplication") {
             id = "org.dmb1227.convention.android.application"
-            implementationClass = "AndroidApplicationConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.AndroidApplicationConventionPlugin"
         }
         register("androidComposeApplication") {
             id = "org.dmb1227.convention.android.application.compose"
-            implementationClass = "AndroidApplicationComposeConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.AndroidApplicationComposeConventionPlugin"
         }
         register("cmpApplication") {
             id = "org.dmb1227.convention.cmp.application"
-            implementationClass = "CmpApplicationConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.CmpApplicationConventionPlugin"
         }
         register("kmpLibrary") {
             id = "org.dmb1227.convention.kmp.library"
-            implementationClass = "KmpLibraryConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.KmpLibraryConventionPlugin"
         }
         register("cmpLibrary") {
             id = "org.dmb1227.convention.cmp.library"
-            implementationClass = "CmpLibraryConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.CmpLibraryConventionPlugin"
         }
         register("cmpFeature") {
             id = "org.dmb1227.convention.cmp.feature"
-            implementationClass = "CmpFeatureConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.CmpFeatureConventionPlugin"
         }
         register("buildKonfig") {
             id = "org.dmb1227.convention.buildkonfig"
-            implementationClass = "BuildKonfigConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.BuildKonfigConventionPlugin"
         }
         register("room") {
             id = "org.dmb1227.convention.room"
-            implementationClass = "RoomConventionPlugin"
+            implementationClass = "org.dmb1227.chirp.RoomConventionPlugin"
         }
     }
 }

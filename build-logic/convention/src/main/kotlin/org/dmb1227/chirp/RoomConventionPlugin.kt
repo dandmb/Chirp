@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import androidx.room.gradle.RoomExtension
 import org.dmb1227.chirp.convention.libs
 import org.gradle.api.Plugin

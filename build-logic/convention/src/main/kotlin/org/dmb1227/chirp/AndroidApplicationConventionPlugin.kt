@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import com.android.build.api.dsl.ApplicationExtension
 import org.dmb1227.chirp.convention.configureKotlinAndroid
 import org.dmb1227.chirp.convention.libs
