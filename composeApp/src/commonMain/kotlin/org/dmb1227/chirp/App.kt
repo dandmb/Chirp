@@ -18,6 +18,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
+import org.dmb1227.core.designsystem.theme.ChirpTheme
 
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -25,7 +26,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    ChirpTheme {
         val layoutDirection = LocalLayoutDirection.current
         Surface(
             modifier = Modifier
