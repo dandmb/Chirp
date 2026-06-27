@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import org.dmb1227.chirp.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -18,6 +20,9 @@ class CmpLibraryConventionPlugin: Plugin<Project> {
                 "commonMainImplementation"(libs.findLibrary("jetbrains-compose-foundation").get())
                 "commonMainImplementation"(libs.findLibrary("jetbrains-compose-material3").get())
                 "commonMainImplementation"(libs.findLibrary("jetbrains-compose-material-icons-core").get())
+
+                "debugImplementation"(libs.findLibrary("androidx-compose-ui-tooling").get())
+
             }
         }
     }

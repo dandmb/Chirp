@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import org.dmb1227.chirp.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project

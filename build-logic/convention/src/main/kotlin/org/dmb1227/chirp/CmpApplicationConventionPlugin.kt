@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import org.dmb1227.chirp.convention.configureAndroidTarget
 import org.dmb1227.chirp.convention.configureIosTargets
 import org.dmb1227.chirp.convention.libs

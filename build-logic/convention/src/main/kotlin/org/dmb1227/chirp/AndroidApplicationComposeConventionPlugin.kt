@@ -1,3 +1,5 @@
+package org.dmb1227.chirp
+
 import com.android.build.api.dsl.ApplicationExtension
 import org.dmb1227.chirp.convention.configureAndroidCompose
 import org.gradle.api.Plugin
